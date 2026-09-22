@@ -47,6 +47,11 @@ a {
     color: white;
     text-decoration: none;
 }
+.carousel-item img {
+    height: 400px; /* Defina a altura desejada para o carrossel */
+    object-fit: cover; /* Recorta as sobbras mantendo a proporção correta */
+    width: 100%;
+}
 
 
 main {
@@ -182,12 +187,13 @@ footer p {
 
 }
 
+.carousel-item img,
 .imagem-carousel {
-    width: 60%;
-    height: 250px;
-    object-fit: cover;
-    display: block;
-    margin: auto;
+    width: 100%;
+    height: auto;          /* Mantém a proporção original */
+    max-height: 450px;     /* Evita que ela fique gigante na tela */
+    object-fit: contain;   /* Exibe a imagem inteira sem recortar nem achatar */
+    margin: 0 auto;
 }
 
 /* EVITA ROLAGEM HORIZONTAL */
